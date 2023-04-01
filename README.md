@@ -21,26 +21,26 @@ For example, you can create a list of numbers like this:
 
 numbers = [1, 2, 3, 4, 5]
 
-On the other hand, a generator is an iterable that generates its values on the fly, one at a time, using a function that yields a value each time it's called. Unlike lists, generators don't store all the values in memory at once, but generate them on demand. This can be useful when dealing with very large datasets, where storing everything in memory at once may not be feasible.
+On the other hand, a generator is an iterable that generates its values on the fly, one at a time, using a function that yields a value each time it's called. Unlike lists, generators don't store all the values in memory at once, but generate them on demand. This can be useful when dealing with very large datasets, where storing everything in memory at once may not be feasible.<br/>
 
-For example, you can create a generator of numbers like this:
+For example, you can create a generator of numbers like this:<br/>
 
-def generate_numbers():
-    for i in range(1, 6):
-        yield i
+def generate_numbers():<br/>
+    for i in range(1, 6):<br/>
+        yield i<br/>
 
-numbers = generate_numbers()
+numbers = generate_numbers()<br/>
 
-In this example, the generate_numbers() function is a generator that yields the numbers from 1 to 5 one at a time. The numbers variable is assigned the generator object returned by calling generate_numbers(). You can iterate over the generator to get each value:
+In this example, the generate_numbers() function is a generator that yields the numbers from 1 to 5 one at a time. The numbers variable is assigned the generator object returned by calling generate_numbers(). You can iterate over the generator to get each value:<br/>
 
-This will output:
+This will output:<br/>
 
-1
-2
-3
-4
-5
+1<br/>
+2<br/>
+3<br/>
+4<br/>
+5<br/>
 
-Note that once a value is yielded by a generator, it's not stored in memory, and the generator keeps track of its state between calls to yield. This means that you can't index or modify the elements of a generator directly, but you can use built-in functions like next() to get the next value from the generator.
+Note that once a value is yielded by a generator, it's not stored in memory, and the generator keeps track of its state between calls to yield. This means that you can't index or modify the elements of a generator directly, but you can use built-in functions like next() to get the next value from the generator.<br/>
 
 In summary, lists are useful for storing collections of data that can be modified, indexed, and accessed in memory, while generators are useful for generating sequences of data on demand, without storing them all in memory at once.
