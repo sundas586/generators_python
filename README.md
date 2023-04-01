@@ -2,6 +2,7 @@
 
 - Generators are used to create on-the-fly-value. It does not store the **value** but the **instruction to create the value**.
 - The are special functions that allow sequencial iterable values
+- The are beneficial when you deal with big data and dont want to store the values and consume memory
 
 ### genrators vs lists :
 
