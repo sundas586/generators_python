@@ -1,5 +1,8 @@
 # generators_python
 
+![image](https://github.com/sundas586/generators_python/assets/33677647/516f9d56-ef0e-4657-9f45-e6c2a451a2b8)
+
+
 - Generators are used to create on-the-fly-value. It does not store the **value** but the **instruction to create the value**.
 - The are special functions that allow sequencial iterable values
 - The are beneficial when you deal with big data and dont want to store the values and consume memory
